@@ -18,3 +18,7 @@ icons from : font awesome
 	fonts from : google font
 
 # you can give me your feedback
+
+
+this is where to find css shapes 
+https://css-tricks.com/the-shapes-of-css/
