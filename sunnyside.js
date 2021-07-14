@@ -1,4 +1,5 @@
 let mylist = document.querySelector(".ul"),
+    icon = document.querySelector(".phone-menu i"),
     myButton = document.querySelector("i");
 
 myButton.addEventListener("click", function() {
@@ -9,4 +10,6 @@ myButton.addEventListener("click", function() {
         mylist.classList.remove("ul-mobile")
         mylist.classList.add("ul")
     }
+    icon.classList.toggle("fa-times")
 })
+

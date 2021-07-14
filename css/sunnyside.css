@@ -152,11 +152,13 @@ header nav .phone-menu{
 .ul-mobile::after{
     content: "";
     position: absolute;
-    top: -20px;
+    top: -30px;
     right: 0;
-    height: 20px;
-    width: 20px;
-    background-color: white;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid white;
 }
 .ul-mobile li {
     display: block;
@@ -252,6 +254,24 @@ header nav .phone-menu{
     background-position: center;
     position: relative;
 }
+@media(max-width: 767px) {
+    .landing .grid> div {
+        padding: 10px;
+        height: 500px;
+        position: relative;
+    }
+    .landing p {
+        font-size: 1.3em;
+        width: 281px;
+    }
+    .landing .grid .text p {
+        margin: 40px 0;
+        color: var(--Dark-moderate);
+        font-size: 1.3em;
+        font-size: 1.3em;
+        width: 240px;
+    }
+}
 /* end landing */
 
 /* testimonials*/
@@ -299,7 +319,16 @@ header nav .phone-menu{
     color: hsl(232, 10%, 55%);
     margin-top: 10px;
 }
-
+@media(max-width: 767px) {
+    .testimonials .container .flex p {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        line-height: 1.5;
+        font-size: 1rem;
+        font-weight: 600;
+        color: hsl(232, 10%, 55%);
+    }
+}
 /* last section */
 .photos {
     display: grid;
@@ -352,10 +381,15 @@ footer .fl {
 footer .fl i {
     padding: 5px;
 }
-footer ul li a {
+footer a {
     text-decoration: none;
-    padding: 20px;
     color: var(--Dark-desaturated-cyan);
+}
+footer a:hover {
+    color: white;
+}
+footer ul li {
+    padding: 20px;
 }
 footer h3 {
     margin: 40px 0;
